@@ -7,10 +7,7 @@ class FileHandler
         $this->GetFile();
     }
 
-    private $base_dir = './';
-
-    ///home/user7180/public_html/bluebottle/contests/
-
+    private $base_dir = '/home/user7180/public_html/bluebottle/contests/';
     function GetFile()
     {
         $destiation_dir = $this->base_dir . $_FILES['inputfile']['name'];
