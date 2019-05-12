@@ -6,7 +6,7 @@ require "PHP/top_nav.php";
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Benefactori</title>
+    <title>BlueBottle</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 

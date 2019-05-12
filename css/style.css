@@ -78,6 +78,19 @@ body {
     margin: 0 auto;
     margin-top: 20px;
     border: 4px double black;
+
+}
+
+.top1 {text-shadow:1px 1px 10px #8f0000;font-weight:bold;font-variant:small-caps;color:#000000;font-family:trebuchet MS,sans-serif;line-height:1;background:url(https://images.vfl.ru/ii/1547126727/bb4eb4fb/24893316.gif)}
+.top2 {color:#000000;font-weight:bold;text-shadow:#000000 1px 1px 10px;background:url(/img/bggold.gif)}
+.top3 {color:#bfd5f7;text-shadow:#3777e6 1px 2px 4px;font-weight:bold}
+.task_block_success {
+    width: 450px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 4px double black;
+    background-color: #4CAF50;
 }
 
 .task_block h2 {
@@ -96,6 +109,7 @@ body {
     padding-left: 212px;
     position: absolute;
 
+
 }
 
 .task_block a {
@@ -109,6 +123,7 @@ body {
 .task-collection {
     margin: 150px;
     display: block;
+
 }
 
 .answer-input {

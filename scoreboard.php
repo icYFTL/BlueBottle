@@ -37,16 +37,33 @@ GetTopNav();
     </thead>
     <tbody>
     <?php
-
     while ($row = $query->fetch_assoc()) {
 
         if ($row['admin'])
             continue;
+        if ($counter == 1){
         echo sprintf("<tr>
            <th scope=\"row\">%d</th>
-           <td>%s</td>
+           <td><span class='top1'>%s</span></td>
            <td>%s</td>
        </tr>", $counter, $row["login"], $row["score"]);
+    }
+        if ($counter == 2){
+            echo sprintf("<tr>
+           <th scope=\"row\">%d</th>
+           <td><span class='top2'>%s</span></td>
+           <td>%s</td>
+       </tr>", $counter, $row["login"], $row["score"]);
+        }
+
+        if ($counter == 3){
+            echo sprintf("<tr>
+           <th scope=\"row\">%d</th>
+           <td><span class='top3'>%s</span></td>
+           <td>%s</td>
+       </tr>", $counter, $row["login"], $row["score"]);
+
+        }
         $counter++;
     }
     ?>
