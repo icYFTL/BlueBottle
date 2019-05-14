@@ -24,6 +24,9 @@ class AuthClass
     {
         if ($this->isAuth())
             header("Location: contests.php");
+        if (!preg_match("/^[a-zA-Z0-9]+$/", $_POST['login'])) {
+            return false;
+        }
         $this->userdata = $this->handle->query(sprintf("SELECT * FROM usersdata WHERE login='%s'", $login))->fetch_assoc();
         $this->handle->close();
         if (md5(md5($password)) == $this->userdata['password']) {
